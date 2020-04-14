@@ -1,4 +1,4 @@
-# Three state switch widget
+# Three state switch widget for HABpanel
 
 A widget with three states to give users more feedback about long-lasting processes.
 
