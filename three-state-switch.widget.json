@@ -1,5 +1,5 @@
 {
-    "template": "<style>\n  .blinking{\n   \tanimation:blinkingText 5s infinite;\n\t}\n  @keyframes blinkingText{\n    0%{filter: blur(0px) saturate(0%) invert(90%); }\n    25%{filter: blur(0.8px) saturate(1800%)invert(90%); }\n    50%{filter: blur(0px) saturate(0%) invert(90%); }\n    75%{filter: blur(0.8px) saturate(1800%) invert(90%); }\n    100%{filter: blur(0px) saturate(0%) invert(90%); }\n\t}\n</style>\n\n<div style=\"margin: 5px;\">\n  <div class=\"row\"> \n     <div class=\"col-xs-2 ng-class: (itemValue(config.power_item)=='UNDEF' ? 'blinking' : '')\" ng-init='power={ name: \"Power\", \"item\": config.power_item, \"iconset\": \"smarthome-set\", \"icon\": \"power-button\", \"hidelabel\": true, \"hideonoff\": true, \"icon_size\": config.icon_size }'>\n  \t\t\t\t<widget-switch ng-model=\"power\"></widget-switch>\n      </div>\n      <div class=\"col-xs-8 text-left\">\n        <h3>{{getItem(config.power_item).label}}</h3>\n      </div>\n    <hr/>\n\t</div>\n</div>",
+    "template": "<style>\n  .blinking{\n   \tanimation:blinkingText 5s infinite;\n\t}\n  @keyframes blinkingText{\n    0%{filter: blur(0px) saturate(0%) invert(90%); }\n    25%{filter: blur(0.8px) saturate(1800%) invert(90%); }\n    50%{filter: blur(0px) saturate(0%) invert(90%); }\n    75%{filter: blur(0.8px) saturate(1800%) invert(90%); }\n    100%{filter: blur(0px) saturate(0%) invert(90%); }\n\t}\n</style>\n\n<div style=\"margin: 5px;\">\n  <div class=\"row\"> \n     <div class=\"col-xs-2 ng-class: (itemValue(config.power_item)=='UNDEF' ? 'blinking' : '')\" ng-init='power={ name: \"Power\", \"item\": config.power_item, \"iconset\": \"smarthome-set\", \"icon\": \"power-button\", \"hidelabel\": true, \"hideonoff\": true, \"icon_size\": config.icon_size }'>\n  \t\t\t\t<widget-switch ng-model=\"power\"></widget-switch>\n      </div>\n      <div class=\"col-xs-8 text-left\">\n        <h3>{{getItem(config.power_item).label}}</h3>\n      </div>\n    <hr/>\n\t</div>\n</div>",
     "settings": [
         {
             "type": "item",
@@ -16,5 +16,7 @@
     ],
     "name": "Three state switch",
     "author": "Andreas Rettig",
-    "description": "A state that shows three states: ON, OFF and UNDEF"
+    "description": "A button that shows three states: ON, OFF and UNDEF",
+    "source_url": "https://raw.githubusercontent.com/artcom/openhab-three-state-switch/master/three-state-switch.widget.json",
+    "readme_url": "https://github.com/artcom/openhab-three-state-switch"
 }
